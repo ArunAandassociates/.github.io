@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arun A & Associates</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #f0f0f0;
+            background-color: #000;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #000;
+            color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #111;
+        }
+        nav a {
+            color: #f0f0f0;
+            padding: 15px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #333;
+        }
+        .hero {
+            background-image: url('https://via.placeholder.com/1200x400'); /* Replace with your image */
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #f0f0f0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+            animation: slideIn 2s ease-out;
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        .content-section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .content-section h2 {
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        .service-item, .team-member {
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            vertical-align: top;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            background-color: #222;
+            transition: transform 0.3s;
+            color: #f0f0f0;
+        }
+        .service-item:hover, .team-member:hover {
+            transform: translateY(-10px);
+        }
+        footer {
+            background-color: #000;
+            color: #f0f0f0;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Arun A & Associates</h1>
+</header>
+
+<nav>
+    <a href="#services">Services</a>
+    <a href="#team">Team</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+    <h1>Expert Financial Guidance</h1>
+</div>
+
+<section id="services" class="content-section">
+    <h2>Our Services</h2>
+    <div class="service-item">
+        <h3>Tax Planning</h3>
+        <p>Optimize your tax strategy with our expert advice.</p>
+    </div>
+    <div class="service-item">
+        <h3>Auditing</h3>
+        <p>Comprehensive auditing services to ensure compliance.</p>
+    </div>
+    <div class="service-item">
+        <h3>Consulting</h3>
+        <p>Strategic consulting to drive your business forward.</p>
+    </div>
+</section>
+
+<section id="team" class="content-section">
+    <h2>Meet Our Team</h2>
+    <div class="team-member">
+        <h3>Arun A</h3>
+        <p>Chartered Accountant</p>
+    </div>
+    <div class="team-member">
+        <h3>Binu Sanker</h3>
+        <p>Audit Manager</p>
+    </div>
+</section>
+
+<section id="contact" class="content-section">
+    <h2>Contact Us</h2>
+    <p>Email: ca.arunassociates24@gmail.com</p>
+    <p>Phone: 8592810025, 7558916584</p>
+</section>
+
+<footer>
+    <p>&copy; 2025 Arun A & Associates</p>
+</footer>
+
+</body>
+</html>
